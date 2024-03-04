@@ -21,3 +21,18 @@
    border-radius: 37px;
    cursor: pointer;
 }
+
+.tasks-generator {
+height: 50px;
+width: 350px;
+background-color:rgb(210, 200, 232);
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.typing-task {
+    height: 30px;
+    width: 280px;
+}
+
