@@ -2,14 +2,15 @@ import React from "react";
 import deleteIcon from '../../delete.png';
 import './task.css';
 
-const Task = () => {
+const Task = (cutie) => {
     return (
         <div className="task">
-            <input type="checkbox" />
-            <span>Task 1</span>
+            <input checked={cutie.cariocaMea.isDone} type="checkbox" />
+            <span>{cutie.cariocaMea.description}</span>
             <img src={deleteIcon} alt='title'/>
         </div>
     );
 }
 
 export default Task;
+
