@@ -21,18 +21,28 @@ const Content = () => {
             isDone: false
         }
     ])
+    const [showForm, setShowForm] = useState(false);
+
+    const openTaskForm = () => {
+        setShowForm(!showForm)
+    }
+
     return (
         <div className='content'>
             <div className='activity-list'>
                 {paharCuCarioci.map(carioca => (
                     <Task cariocaMea={carioca} />
                 ))}
-            <div className='tasks-generator'>  
-                <input className='typing-task' />
-                <img src={saveIcon} />
+                {showForm ? (
+                <div className='tasks-generator'>
+                    <input className='typing-task' />
+                    <img src={saveIcon} />
+                </div>
+                ) : ''}
             </div>
-            </div>
-            <div className='button'> + New Task</div>
+            <div className='button' onClick={openTaskForm}>{
+                showForm ? 'Close Form' : '+ New Task'
+            }</div>
         </div>
     )
 }
