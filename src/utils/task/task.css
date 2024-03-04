@@ -1,0 +1,11 @@
+.task {
+    height: fit-content;
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 10px 0 10px 30px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}

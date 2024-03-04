@@ -1,10 +1,13 @@
+import Task from '../task/task';
 import './content.css';
 
 const Content = () => {
     return (
         <div className='content'>
             <div className='activity-list'>
-                Activity
+                <Task />
+                <Task />
+                <Task />
             </div>
             <div className='button'> + New Task</div>
         </div>
