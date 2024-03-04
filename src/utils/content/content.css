@@ -1,0 +1,22 @@
+.content {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-list {
+    background-color: white;
+    height: 300px;
+    width: 350px;
+}
+
+.button {
+   background-color:#AF7EEB;
+   color: white;
+   height: 40px;
+   width: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 37px;
+}

@@ -1,0 +1,16 @@
+.title {
+    background-color: #AF7EEB ;
+    height: 40px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: unset;
+}
+
+.header {
+ display: flex;
+ justify-content: center;
+ padding-bottom: 30px;
+}
