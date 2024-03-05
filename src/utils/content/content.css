@@ -11,28 +11,42 @@
 }
 
 .button {
-   background-color:#AF7EEB;
-   color: white;
-   height: 40px;
-   width: 140px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 37px;
-   cursor: pointer;
+    background-color: #AF7EEB;
+    color: white;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 37px;
+    cursor: pointer;
 }
 
-.tasks-generator {
-height: 50px;
-width: 350px;
-background-color:rgb(210, 200, 232);
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+.task-generator {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+
+.tasks-bar {
+    height: 50px;
+    width: 190px;
+    background-color: rgb(210, 200, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .typing-task {
     height: 30px;
-    width: 280px;
+    width: 150px;
 }
 
+.newTaskGenerate {
+height: 50px;
+width: 190px;
+}

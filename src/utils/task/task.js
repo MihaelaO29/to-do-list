@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import deleteIcon from '../../delete.png';
 import './task.css';
 
 const Task = (cutie) => {
+
     return (
         <div className="task">
             <input checked={cutie.cariocaMea.isDone} type="checkbox" />
