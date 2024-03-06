@@ -5,6 +5,7 @@ import saveIcon from '../../check.png';
 
 const Content = () => {
     const [showForm, setShowForm] = useState(false);
+    const [taskDescription, setTaskDescription] = useState('');
     const [listOfTasks, setListOfTasks] = useState([
         {
             id: 1,
@@ -27,6 +28,22 @@ const Content = () => {
         setShowForm(!showForm)
     }
 
+    const onUserInput = (event) => {
+        setTaskDescription(event.target.value)
+    }
+
+    const saveTask = () => {
+        const newTask = {
+            id: 4,
+            description: taskDescription,
+            isDone: false
+        };
+        setListOfTasks([...listOfTasks, newTask])
+        openTaskForm()
+        setTaskDescription('')
+    }
+
+
     return (
         <div>
             <div className='content'>
@@ -44,8 +61,8 @@ const Content = () => {
 
                 {showForm ? (
                     <div className='tasks-bar'>
-                        <input className='typing-task' />
-                        <img src={saveIcon} />
+                        <input onChange={onUserInput} className='typing-task' />
+                        <img onClick={saveTask} src={saveIcon} />
                     </div>
                 ) : ''}
             </div>
