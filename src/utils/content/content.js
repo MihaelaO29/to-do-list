@@ -6,23 +6,8 @@ import saveIcon from '../../check.png';
 const Content = () => {
     const [showForm, setShowForm] = useState(false);
     const [taskDescription, setTaskDescription] = useState('');
-    const [listOfTasks, setListOfTasks] = useState([
-        {
-            id: 1,
-            description: 'Roz',
-            isDone: false
-        },
-        {
-            id: 2,
-            description: 'Verde',
-            isDone: true
-        },
-        {
-            id: 3,
-            description: 'Galben',
-            isDone: false
-        }
-    ])
+    const [count, setCount] = useState(1);
+    const [listOfTasks, setListOfTasks] = useState([])
 
     const openTaskForm = () => {
         setShowForm(!showForm)
@@ -34,22 +19,27 @@ const Content = () => {
 
     const saveTask = () => {
         const newTask = {
-            id: 4,
+            id: count,
             description: taskDescription,
             isDone: false
         };
-        setListOfTasks([...listOfTasks, newTask])
-        openTaskForm()
-        setTaskDescription('')
+        setCount(count + 1);
+        setListOfTasks([...listOfTasks, newTask]);
+        openTaskForm();
+        setTaskDescription('');
     }
 
+    const deleteTask = (id) => {
+        const filterTask = listOfTasks.filter(task => task.id !== id)
+        setListOfTasks(filterTask)
+    }
 
     return (
-        <div>
-            <div className='content'>
-                <div className='activity-list'>
+        <div key={'content-container'}>
+            <div key={'content'} className='content'>
+                <div key={'activity'} className='activity-list'>
                     {listOfTasks.map(carioca => (
-                        <Task cariocaMea={carioca} />
+                        <Task cariocaMea={carioca} deleteTask={deleteTask} />
                     ))}
                 </div>
             </div>
