@@ -1,9 +1,12 @@
 .task {
-    height: fit-content;
-    width: calc(100% - 30px);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.task:hover{
+    background-color: rgba(242, 207, 179, 0.849);
 }
 
 .task_element {
@@ -21,4 +24,9 @@
     border-radius: 50%;
     height: 20px;
     width: 15px;
+    margin-right: 10px;
+}
+
+.delete:hover {
+    transform: scale(1.1);
 }
