@@ -2,11 +2,8 @@
     height: fit-content;
     width: calc(100% - 30px);
     display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    padding: 10px 10px 10px 10px;
-    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .task_element {
@@ -14,6 +11,10 @@
     font-weight: 600;
     word-break: break-word;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
 }
 
 .checkbox {

@@ -39,9 +39,7 @@ const Content = () => {
     return (
         <div key={'content-container'}>
             <div key={'content'} className='content'>
-
                 <div key={'activity'} className='activity-list'>
-
                     {listOfTasks.map(task => (
                         <Task allTasks={task} deleteTask={deleteTask} />
                     ))}
@@ -50,7 +48,7 @@ const Content = () => {
 
             <div className='task_generator_bar'>
                 <div className='task-generator'>
-                    <div className='button' onClick={openTaskForm}>{
+                    <div className='button_task' onClick={openTaskForm}>{
                         showForm ? 'Close Form' :
                             <> New Task </>
                     }</div>
@@ -58,7 +56,7 @@ const Content = () => {
                     {showForm ? (
                         <div className='tasks-bar'>
                             <input onChange={onUserInput} className='typing-task' />
-                            <img onClick={saveTask} src={check} alt='check_image' />
+                            <img className='saveTask' onClick={saveTask} src={check} alt='check_image' />
                         </div>
                     ) : ''}
                 </div>
