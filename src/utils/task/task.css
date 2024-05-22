@@ -1,11 +1,23 @@
-.task{
+.task {
     height: fit-content;
     width: calc(100% - 30px);
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    padding: 10px 0 10px 30px;
-    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
+}
+
+.task_element {
+    font-size: 18px;
+    font-weight: 600;
+    word-break: break-word;
+    padding-left: 10px;
+}
+
+.checkbox {
+    border-radius: 50%;
+    height: 20px;
+    width: 15px;
 }

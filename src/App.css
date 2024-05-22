@@ -1,11 +1,15 @@
 .App {
-  text-align: center;
-  background-color: #E3E9FF;
   height: 100vh;
   width: 100vw;
+  text-align: center;
+  background-color: rgb(227 229 234 / 76%);
+  scrollbar-width: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  padding-top: 100px;
+  justify-content: space-evenly;
+  font-family: Courier, monospace;
 }

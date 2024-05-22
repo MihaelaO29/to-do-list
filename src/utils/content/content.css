@@ -1,41 +1,45 @@
 .content {
-    display: contents;
+    display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .activity-list {
     background-color: white;
-    height: 300px;
-    width: 350px;
+    height: 480px;
+    width: 330px;
+    overflow-y: scroll;
+    padding: 10px 10px;
 }
 
+
 .button {
-    background-color: #AF7EEB;
+    background: rgba(245, 122, 22, 0.849);
     color: white;
-    height: 40px;
-    width: 100px;
+    height: 60px;
+    width: 120px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 37px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .task-generator {
     height: 100px;
-    width: 300px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
 }
 
 
 .tasks-bar {
     height: 50px;
-    width: 190px;
-    background-color: rgb(210, 200, 232);
+    width: 350px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -43,5 +47,13 @@
 
 .typing-task {
     height: 30px;
-    width: 150px;
+    width: 300px;
+}
+
+.task_generator_bar {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
